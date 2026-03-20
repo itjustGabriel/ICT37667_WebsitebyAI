@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Cybersecurity</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #020617;
+    color: #e5e7eb;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #020617;
+    border-bottom: 1px solid #0ea5e9;
+}
+
+nav h2 { color: #38bdf8; }
+nav a { color: #e5e7eb; text-decoration: none; margin-left: 20px; }
+nav a:hover { color: #38bdf8; }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.hero img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #38bdf8;
+    box-shadow: 0 0 30px rgba(56,189,248,0.6);
+}
+
+.hero-text h1 { font-size: 42px; margin: 0; }
+.hero-text p { color: #94a3b8; margin-top: 10px; }
+
+.section { padding: 60px 50px; }
+.section h2 { color: #38bdf8; margin-bottom: 20px; }
+
+.skills { display: flex; flex-wrap: wrap; gap: 15px; }
+.skill { background: #1e293b; padding: 10px 15px; border-radius: 8px; }
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(56,189,248,0.4);
+}
+
+.certifications {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.certifications img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #0ea5e9;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>MyPortfolio</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#cert">Certifications</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <img src="profile.png" alt="Profile">
+    <div class="hero-text">
+        <h1>ปภาวิน สังข์สิงห์</h1>
+        <p>Cybersecurity Student | Future SOC Analyst</p>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        ผมเป็นนักศึกษาชั้นปีที่ 2 จากมหาวิทยาลัยศรีปทุม (SPU) 
+        กำลังศึกษาอยู่ในคณะเทคโนโลยีสารสนเทศ 
+        มีความสนใจด้าน Cybersecurity, Ethical Hacking และ Network Security 
+        และมีเป้าหมายในการทำงานสายความปลอดภัยไซเบอร์ในอนาคต
+    </p>
+</section>
+
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">Networking (CCNA)</div>
+        <div class="skill">Linux</div>
+        <div class="skill">TryHackMe</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">Web Security</div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>CTF Writeups</h3>
+            <p>Documenting challenges and solutions from TryHackMe and CTF platforms.</p>
+        </div>
+        <div class="card">
+            <h3>Network Lab</h3>
+            <p>Built virtual network using Cisco Packet Tracer.</p>
+        </div>
+        <div class="card">
+            <h3>Web Pentest Practice</h3>
+            <p>Practicing OWASP Top 10 vulnerabilities.</p>
+        </div>
+    </div>
+</section>
+
+<section id="cert" class="section">
+    <h2>Certifications</h2>
+    <div class="certifications">
+        <img src="cert1.png" alt="Huawei Certificate">
+        <img src="cert2.png" alt="Coursera Certificate">
+        <img src="cert3.png" alt="DGA Certificate">
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: papawin.sam@spumail.net</p>
+    <p>GitHub: https://github.com/itjustGabriel</p>
+</section>
+
+<footer>
+    <p>© 2026 ปภาวิน สังข์สิงห์</p>
+</footer>
+
+</body>
+</html>
